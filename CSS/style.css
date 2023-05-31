@@ -278,6 +278,10 @@ footer p {
     cursor: pointer;
 }
 
+footer {
+    overflow-y: scroll;
+}   
+
 
 
 
