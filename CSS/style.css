@@ -1,0 +1,283 @@
+body {
+	width: 100%;
+}
+
+/* Stiler for header */
+header {
+    background-color: #D4DDEC;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.logoDiv {
+    display: flex;
+    align-items: center;
+}
+/* Stiler for logo */
+.logoDiv img {
+    margin-top: 0px;
+    margin-left: 24px;
+    height: 152px;
+    width: 173px;
+}
+
+/* Stiler for navigasjonsmeny i top-bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding:70px;
+}
+
+nav ul li {
+    margin-right: 52px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:#000000;
+    margin-right: 0px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 28px;
+    height: 380px;
+}
+
+.seksjonTo {
+    background-color: #FAFAFC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 52px;
+    height: 380px;
+}
+
+.bildeForside {
+    padding-top: 62px;
+}
+
+.seksjonTre {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding-top: 36px;
+    height: 396px;
+    position: relative;
+}
+
+.underOverskriftTo {
+    text-align: left;
+    margin-top: 52px;
+    margin-left: 70px;
+}
+
+.mockup1 {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: 20px;
+    width: 367px;
+    height: 356px;
+    position: absolute;
+    top: 40px;
+    right: 70px;
+}
+
+
+/* Stiler for overskrift */
+h1 {
+   margin-top: 0;
+   padding: 0 70px;
+   width: 626px;
+   text-align: left;
+   font-family: 'Inter';
+   font-size: 64px;
+   font-weight: bold;
+   color: black;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   margin-bottom: 16px;
+}
+
+/* Stil for underoverskrift */
+p {
+    margin-top: 16px;
+	margin-left: 70px;
+	width: 487px;
+	height: 30px;
+	font-family: 'Inter';
+	font-size: 16px;
+	text-align: left;
+	color:#000000;
+}
+
+.paragraf2 {
+    margin-top: 28px;
+	margin-left: 70px;
+	font-family: 'Inter';
+	font-size: 16px;
+	text-align: left;
+	color:#000000;
+}
+
+/* Stiler for appstore og google play */
+.appstore-googleplay-container {
+    margin-left: 70px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 52px;
+}
+
+.appstoreBox, .googlePlayBox {
+    flex-shrink: 0;
+}
+
+.containerForsideBilde {
+    margin-top: 1px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    right: 70px;
+}
+
+.containerForsideBilde img {
+    height: auto;
+}
+
+.underoverskrift {
+    text-align: center;
+    margin-top: 52px;
+}
+
+.forsideBildeOm {
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 50%;
+    margin-right: 20px;
+    height: auto;
+}
+.OmInfo {
+    margin-top: -300px;
+    margin-left: 55%;
+    width: 50%;
+    height: 570px;
+}
+
+.overskriftOm {
+    font-size: 32px;
+
+}
+
+.paragrafOm {
+    margin-left: -2px;
+}
+
+/* Footer section */
+footer {
+    background-color: #0E0E0F;
+    color: #FDFDFD;
+    display: flex;
+    flex-direction:column;
+    bottom: 0;
+    width: 100%;
+    margin-top:100px;
+}
+
+/* Style of the 'p' text in footer */
+footer p {
+    text-align: center;
+    margin-left: -30px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+
+
+/* Style of the container for the footer content */
+.containerFooter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    padding: 100px 20px;
+    flex-wrap:wrap;
+}
+
+/* Style of unordered list of service links */
+.service ul {
+    list-style-type: none;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.service {
+    flex-basis: 30%;
+    margin-right: 100px;
+}
+
+@media screen and (max-width:768px) {
+    .service {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+.legal-contact {
+    display: flex;
+    flex-basis: 70%;
+    justify-content: flex-start;
+    gap:100px;
+}
+
+@media screen and (max-width: 768px) {
+    .legal-contact {
+        flex-basis: 100%;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* Contact section in footer */
+.contact {
+    flex-basis: 30%;
+
+}
+
+@media screen and (max-width: 768px) {
+    .contact {
+        order: 1;
+    }
+}
+
+
+.legal {
+    margin-right: 250px;
+    flex-basis: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    .legal {
+        margin-right: 0;
+    }
+}
+ 
+/* Style of unordered list of contact information */
+.service ul,
+.legal ul,
+.contact ul {
+    list-style-type: none;
+    line-height: 1.8;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+
