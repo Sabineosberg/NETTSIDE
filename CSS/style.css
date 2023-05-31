@@ -1,109 +1,150 @@
+/* -------------------------------- FORSIDE ---------------------------------- */
+
+
+/* Body- element */
 body {
-	width: 100%;
+	width: 100%; /* Setter bredden på skjermen. */
+    font-family: 'inter';
+    background-color: #FAFAFC; /* Setter bakgrunnsfarge for hele body */
+    overflow-x: hidden; /* Skjuler horisontal overflow */
+    overflow-y: scroll; /* Viser vertikal overflow som en scrollbar */
 }
 
-/* Stiler for header */
+
+/* -------------------------------- HEADER ---------------------------------- */
+
+
+/* Header-element */
 header {
     background-color: #D4DDEC;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
+    display: flex; /* Brukes for å plassere innholdet horisontalt */
+    justify-content: space-between; /* Justerer innholdet */
+    align-items: center; /* Sentrerer både hrisontalt og vertikalt. */
 }
+
+
+/* Logo element */
 .logoDiv {
-    display: flex;
-    align-items: center;
-}
-/* Stiler for logo */
-.logoDiv img {
-    margin-top: 0px;
-    margin-left: 24px;
-    height: 152px;
-    width: 173px;
+    display: flex; /* Brukes for å plassere innholdet horisontalt */
+    align-items: center; /* Sentrerer innholdet */
 }
 
-/* Stiler for navigasjonsmeny i top-bar */
-nav ul {
-    list-style: none;
-    display: flex;
-    padding:70px;
+
+/* Bilde til logo element */
+.logoDiv img {
+    margin-top: 0px; /* Avstand fra toppen */
+    margin-left: 24px; /* Avstand fra venstre */
+    height: 152px; /* Høyde på bildet */
+    width: 173px; /* Bredde på bildet */
 }
+
+
+/* Navigasjonsmeny i top-bar */
+nav ul {
+    list-style: none; /* Fjerner punkter i listen */
+    display: flex; /* Bruker flex-boksen for å plassere innholdet horisontalt. */
+    padding:70px; /* Angir padding for å justere avstanden mellom elementene. */
+}
+
 
 nav ul li {
-    margin-right: 52px;
+    margin-right: 52px; /* Angir høyre margin for å justere avstanden mellom navigasjonselementene. */
 }
 
+
+/* Lenker i top-bar */
 nav ul li a {
-    text-decoration: none;
-    color:#000000;
-    margin-right: 0px;
+    text-decoration: none; /* Fjerner understreking fra lenker */
+    color:#010101;
+    margin-right: 0px; /* Nullstiller høyre margin for lenkene */
 }
 
+
+/* -------------------------------- MAIN ---------------------------------- */
+
+
+/* Section-element */
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    padding-top: 28px;
-    height: 380px;
+    display: flex; /* Brukes for å plassere innholdet vertikalt */
+    flex-direction: column; /* Angir at innholdet skal være kolonne */
+    align-items: left; /* Justerer innholdet slik at det kommer mer til venstre */
+    padding-top: 28px; /* Justerer avstand fra toppen */
+    height: 380px; /* Høyden for seksjonselementet */
 }
 
+
+/* SeksjonEn-element */
+.seksjonEn {
+    background: linear-gradient(to bottom right, #F2F2F2, #D6E2F5);    padding: 20px;
+}
+
+
+/* SeksjonTo-elementet */
 .seksjonTo {
     background-color: #FAFAFC;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 52px;
+    display: flex; /* Bruker flex-boksmodellen for innholdet */
+    flex-direction: column; /* Plasserer elementene i en kolonne */
+    align-items: center; /* Justerer elementene vertikalt sentrert */
+    padding-top: 52px; /* Avstand fra top */
     height: 380px;
 }
 
+
+/* Bilde forside */
 .bildeForside {
     padding-top: 62px;
 }
 
+
+/* Seksjon tre */
 .seksjonTre {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: left; /* Justerer elementene til venstre */
     padding-top: 36px;
     height: 396px;
-    position: relative;
+    position: relative; /* For å legge til elementer i forhold til denne seksjonen */
 }
 
+
+/* h2 overskrift */
 .underOverskriftTo {
-    text-align: left;
+    text-align: left; /* Justerer teksten til venstre */
     margin-top: 52px;
     margin-left: 70px;
 }
 
+
+/* Bilde forside av mockup */
 .mockup1 {
-    margin-top: 0;
-    margin-left: auto;
-    margin-right: 20px;
+    margin-top: 0; /* Fjerner toppmarginen for bildet */
+    margin-left: auto; /* For å sentrere elementet horisontalt */
+    margin-right: 20px; /* For å få et mellomrom mellom elementet og overliggende innhold */
     width: 367px;
     height: 356px;
-    position: absolute;
+    position: absolute; /* For å plassere elementet nøyaktig */
     top: 40px;
     right: 70px;
 }
 
 
-/* Stiler for overskrift */
+/* Stiler for h1 overskrift */
 h1 {
-   margin-top: 0;
-   padding: 0 70px;
+   margin-top: 0; /* Fjerner toppmarginen for h1- elementet */
+   padding: 0 70px; /* for mellomrom mellom teksten og elementenes ramme */
    width: 626px;
-   text-align: left;
+   text-align: left; /* Justerer teksten til venstre */
    font-family: 'Inter';
    font-size: 64px;
-   font-weight: bold;
-   color: black;
-   overflow: hidden;
-   text-overflow: ellipsis;
-   margin-bottom: 16px;
+   font-weight: bold; /* Setter skrivevekten til fet */
+   color: 010101;
+   overflow: hidden; /* Skjuler overflytende tekst innenfor h1- elementet */
+   text-overflow: ellipsis; /* Legger til ellipsetegn: "..." for å indikere at det er mer tekst enn hva som vises */
+   margin-bottom: 16px; /* Bunnmargin */
 }
 
-/* Stil for underoverskrift */
+
+/* Stiler for tekst avsnitt */
 p {
     margin-top: 16px;
 	margin-left: 70px;
@@ -111,57 +152,164 @@ p {
 	height: 30px;
 	font-family: 'Inter';
 	font-size: 16px;
-	text-align: left;
-	color:#000000;
+	text-align: left; /* Justerer teksten til venstre innenfor p- elementet */
+	color:#010101;
 }
 
+
+/* Stiler for paragraf2-element */
 .paragraf2 {
     margin-top: 28px;
 	margin-left: 70px;
 	font-family: 'Inter';
 	font-size: 16px;
 	text-align: left;
-	color:#000000;
+	color:#010101;
 }
+
 
 /* Stiler for appstore og google play */
 .appstore-googleplay-container {
     margin-left: 70px;
-    display: flex;
-    align-items: center;
-    gap: 40px;
+    display: flex; /* For å opprette en horisontal layout for innholdet i containeren */
+    align-items: center; /* Sentrerer innholdet */
+    gap: 40px; /* Mellomrom mellom elementene */
     margin-top: 52px;
 }
 
+
+/* Stiler for boksene: AppStore og GooglePlay */
 .appstoreBox, .googlePlayBox {
-    flex-shrink: 0;
+    flex-shrink: 0; /* Forhindrer at begge elementene krymper i str når det er lite plass */
 }
 
+
+/* Stiler for containeren til mockupbilde2 */
 .containerForsideBilde {
     margin-top: 1px;
-    display: flex;
-    justify-content: flex-end;
-    position: absolute;
-    right: 70px;
+    display: flex; /* For å opprette en horisontal layout for innholdet */
+    justify-content: flex-end; /* Justerer innholdet til høyre */
+    position: absolute; /* Posisjonerer bildet i den absolutte forholdet til det nærmeste overordnede elementet med en relativ posisjon */
+    right: 70px; /* Posisjonerer fra høyre kant av det nærmeste elementet med en relativ posisjon */
 }
 
+
+/* Stiler for mockupbilde2 */
 .containerForsideBilde img {
     height: auto;
 }
 
+
+/* Stiler for h2 overskrift */
 .underoverskrift {
     text-align: center;
     margin-top: 52px;
 }
 
+
+/* -------------------------------- FOOTER ---------------------------------- */
+
+
+/* Footer seksjon */
+footer {
+    background-color: #42474F; /* Bakgrunnsfarge */
+    color: #FEFEFE; /* Tekstfarge */
+    display: flex; /* Opprette en horisontal layout for innholdet */
+    flex-direction:column; /* Setter innholdet i kolonneoppsett */
+    bottom: 0; /* Plasserer footer elementet nederst på siden */
+    width: 100%;
+    margin-top:56px;
+}
+
+
+/* Stiler på tekst avsnitt i footer */
+footer p {
+    text-align: center; /* Sentrerer */
+    margin-left: -30px; /* Negativ venstremargin for å justere litt mot midten */
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+/* Container for footer element */
+.containerFooter {
+    display: flex;
+    justify-content: flex-start; /* Justerer innholdet til venstre innenfor elementet */
+    align-items: center;
+    gap: 100px; /* Mellomrom */
+    padding: 100px 20px;
+    flex-wrap: wrap; /* Tillater at innholdet kan pakkes på flere linjer ved behov */
+}
+
+
+/* Stiler på service links */
+.service ul {
+    list-style-type: none; /* Fjerner standard oppramsningstype for listen */
+    line-height: 1.8; /* Skaper mellomrom mellom listeelementene */
+    font-size: 14px;
+}
+
+
+/* Stiler på hele service seksjon i footer */
+.service {
+    flex-basis: 30%; /* Setter bredden til service elementet til 30% av bredden til containerFooter */
+    margin-right: 100px; /* Mellomrom mellom service-elementene */
+}
+
+
+/* Stiler for legal-contakt seksjon i footer */
+.legal-contact {
+    display: flex;
+    flex-basis: 70%; /* Setter bredden av elementet til 70% av bredden til containerFooter */
+    justify-content: flex-start; /* Justerer innholdet til venstre */
+    gap:100px;
+}
+
+
+/* Stiler for kontakt seksjon i footer */
+.contact {
+    flex-basis: 30%; /* Setter bredden av elementet til 30% av bredden til containerFooter */
+}
+
+
+/* Stiler for legal seksjon i footer */
+.legal {
+    margin-right: 250px;
+    flex-basis: 40%; /* Setter bredden av elementet til 40% av bredden til containerFooter */
+}
+
+ 
+/* Stiler for alle elementene sine lister i footer */
+.service ul,
+.legal ul,
+.contact ul {
+    list-style-type: none;/* Fjerner standard oppramsninstype for listene */
+    line-height: 1.8; /* For å skape avstand mellom linjene */
+    font-size: 14px;
+    cursor: pointer; /* Setter pekeren til en håndpeker når den er over elementene i listen for å vise at de er klikkbare */
+}
+
+
+footer {
+    overflow-y: scroll; /* Legger til en vertikal rullefelt hvis innholdet i footer blir for langt */
+}   
+
+
+/* -------------------------------- OM SIDE ---------------------------------- */
+
+
+/* Stiler for forside-bilde på: 'Om' side. */
 .forsideBildeOm {
-    position: absolute;
-    top: 150px;
-    left: 0;
+    position: absolute; /* For å kunne plassere bildet nøyaktig */
+    top: 110px; /* Angir avstand fra toppen */
+    left: 0; /* Angir bredden på bildet (50% av bredden til den overornede containeren) */
     width: 50%;
     margin-right: 20px;
     height: auto;
 }
+
+
+/* Stiler for både overskrift og avsnitt på 'Om' side. */
 .OmInfo {
     margin-top: -300px;
     margin-left: 55%;
@@ -169,97 +317,143 @@ p {
     height: 570px;
 }
 
+
+/* Stiler for overskrift */
 .overskriftOm {
     font-size: 32px;
-
 }
 
+
+/* Stiler for avsnitt */
 .paragrafOm {
     margin-left: -2px;
 }
 
-/* Footer section */
-footer {
-    background-color: #0E0E0F;
-    color: #FDFDFD;
-    display: flex;
-    flex-direction:column;
-    bottom: 0;
-    width: 100%;
-    margin-top:100px;
-}
 
-/* Style of the 'p' text in footer */
-footer p {
-    text-align: center;
-    margin-left: -30px;
-    font-size: 12px;
-    margin-bottom: 10px;
+/* -------------------------------- RESPONSIV KODE ---------------------------------- */
+
+
+/* Responsiv kode for header */
+@media screen and (max-width: 768px) {
+    .logoDiv img {
+        height: 100px;
+        width: 115px;
+    }
+    
+    nav ul {
+        padding: 20px; /* Legger til et mellomrom rundt navigasjonslenkene i mobilvisning */
+    }
 }
 
 
-
-/* Style of the container for the footer content */
-.containerFooter {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 100px;
-    padding: 100px 20px;
-    flex-wrap:wrap;
+/* Responsiv kode for de ulike seksjonene + bilde(i seksjon2) */
+@media screen and (max-width: 768px) {
+    section {
+        height: auto; /* Høyden justeres automatisk i mobilvisning */
+    }
+    
+    .seksjonEn, .seksjonTre, .mockup1 {
+        position: relative; /* Opprettholder flyten i mobilvisning */
+        top: -20px; /* Justerer vertikal posisjon for å skape ønsket plassering */
+        right: 0; /* Nullstiller eventuell horisontal posisjon */
+        margin: 20px auto;
+    }
 }
 
-/* Style of unordered list of service links */
-.service ul {
-    list-style-type: none;
-    line-height: 1.8;
-    font-size: 14px;
+
+/* Responsiv kode for seksjonTo + mockupbilde(i seksjon1) */
+@media screen and (max-width: 768px) {
+    .seksjonTo {
+        height: auto;
+        padding-top: 44px;
+    }
+
+    .bildeForside {
+        width: 100%; /* Setter bredden til 100% for å fylle hele bredden til foreldreelementet */
+        height: auto; /* Justerer høyden automatisk */
+    }
 }
 
-.service {
-    flex-basis: 30%;
-    margin-right: 100px;
+
+/* Responsiv kode for mockup forsidebilde */
+@media screen and (max-width: 768px) {
+    .containerForsideBilde {
+        position: static; /* For å opprettholde normal flyt */
+        margin-top: 50px; /* Toppmellomrom for containeren */
+        justify-content: center; /* Sentrerer innholdet horisontalt */
+    }
+    
+    .containerForsideBilde img {
+        width: auto;/* Justerer bredden automatisk */
+        height: auto; /* Justerer høyden automatisk */
+    }
 }
 
+
+/* Responsiv kode for mockup1 i mobilvisning */
+@media screen and (max-width: 768px) {
+    .mockup1 {
+      margin-top: 200px; /* Angir et tommmellomrom for mockup1- seksjonen */
+    }
+  }
+
+
+/* -------------------------------- RESPONSIV FOOTER ---------------------------------- */
+
+
+/* Responsiv kode for containeren til footer */
+@media screen and (max-width: 768px) {
+    .containerFooter {
+        flex-direction: column; /* Endrer retningen på flex-elementene til kolonneoppsett */
+        gap: 20px;
+        padding: 20px; /* Legger til padding rundt containeren i mobilversjon */
+    }
+    
+    .service {
+        margin-right: 0; /* Nullstiller høyre marginkant for sevice-elementet */
+    }
+    
+    .legal-contact {
+        justify-content: center; /* Sentrerer innholdet vertikalt */
+        gap: 20px; /* Angir mellomrom mellom flex-elementene */
+    }
+    
+    .legal {
+        margin-right: 0; /* Nullstiller høyre marginkant */
+    }
+    
+    .contact {
+        order: 0; /* Endrer rekkefølgen på kontakt elementet til å komme først */
+    }
+    
+    footer {
+        margin-top: 550px; /* Toppmellomrom for footer elementet */
+        padding-bottom: 50px;
+    }
+    
+    footer p {
+        font-size: 10px;
+    }
+}
+
+/* Responsiv kode for service seksjon i footer */
 @media screen and (max-width:768px) {
     .service {
         margin-right: 0;
-        margin-bottom: 20px;
+        margin-bottom: 20px; /* Bunn marginkant for service- elementet */
+        margin-left: -120px; /* Avstand fra venstre */
+        margin-top: 20px; /* Avstand fra toppen */
     }
 
 }
 
-.legal-contact {
-    display: flex;
-    flex-basis: 70%;
-    justify-content: flex-start;
-    gap:100px;
-}
-
+/* Responsiv kode for legal seksjon i footer */
 @media screen and (max-width: 768px) {
     .legal-contact {
-        flex-basis: 100%;
+        flex-basis: 100%; /* For å ta opp hele bredden */
         flex-direction: column;
         gap: 20px;
     }
-}
-
-/* Contact section in footer */
-.contact {
-    flex-basis: 30%;
-
-}
-
-@media screen and (max-width: 768px) {
-    .contact {
-        order: 1;
-    }
-}
-
-
-.legal {
-    margin-right: 250px;
-    flex-basis: 40%;
 }
 
 @media screen and (max-width: 768px) {
@@ -267,21 +461,45 @@ footer p {
         margin-right: 0;
     }
 }
- 
-/* Style of unordered list of contact information */
-.service ul,
-.legal ul,
-.contact ul {
-    list-style-type: none;
-    line-height: 1.8;
-    font-size: 14px;
-    cursor: pointer;
+
+/* Responsiv kode for kontakt seksjon i footer */
+@media screen and (max-width: 768px) {
+    .contact {
+        order: 1; /* Endrer rekkefølgen på kontakt- elementet til å komme etter legal- elementet */
+    }
 }
 
-footer {
-    overflow-y: scroll;
-}   
+
+/* -------------------------------- RESPONSIV OM SIDE ---------------------------------- */
 
 
+/* Responsiv kode for 'om' info */
+@media screen and (max-width: 768px) {
+    .OmInfo {
+        margin-top: 800px; /* Justerer marginen for å unngå overlapp med top navigasjonsbaren */
+        margin-left: 0;
+        width: 100%;
+        height: auto; /* Justerer høyden automatisk */
+    }
 
+    .forsideBildeOm {
+        position: absolute; /* For å justere plasseringen nøyaktig */
+        top: 100px; /* Angir den ønskede vertikale plasseringen */
+        left: 0; /* Nullstiller venstre marginkant */
+        width: 100%;
+        margin-right: 20px;
+        height: auto;
+    }
 
+    .overskriftOm {
+        font-size: 24px;
+        margin-left: 20px;
+    }
+
+    .paragrafOm {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-bottom: -100px;
+
+    }
+}

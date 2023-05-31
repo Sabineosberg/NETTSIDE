@@ -4,64 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Tema 8 </title>
-    <link rel="stylesheet" href="./CSS/style.css">
-    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/style.css"> <!-- Importerer CSS stilarket --> 
+    <link rel="stylesheet" href="./CSS/reset.css"> <!-- Importerer reset stilarket --> 
+    <script async src="./JS/index.js"></script> <!-- Importerer Javascript- filen --> 
 </head>
 
+
 <body>
+
+
     <header>
         <div class="logoDiv"> 
-            <img src="./Assets/logo.png" alt="15minFitLogo">
+            <img src="./Assets/logo.png" alt="15minFitLogo"> <!-- Setter inn et bilde med kilde "logo.png" --> 
         </div>
         <nav>
             <ul>
-                <li> <a href="index.html"> Hjem </a></li>
-                <li> <a href="Om.html"> Om </a></li>
-                <li> <a href="Registrer.html"> Registrer </a></li>
+                <li> <a href="index.html"> Hjem </a></li> <!-- Oppretter en lenke med teksten "Hjem" --> 
+                <li> <a href="Om.html"> Om </a></li> <!-- Oppretter en lenke med teksten "Om" --> 
+                <li> Registrer </a></li> <!-- Lenke som ikke fungerer, men som står som tekst: "Registrer" --> 
             </ul>
         </nav>
     </header>
 
+
     <main>
-        <section> 
-        <h1 class="h1"> 15- minutters sunn livsstil </h1>
-        <p> Sunne oppskrifter, raske treningsøvelser og enkel handleliste! </p>
+        <section class="seksjonEn"> <!-- Nettsiden deles inn i flere seskjoner for letter oversikt --> 
+        <h1 class="h1"> 15- minutters sunn livsstil </h1> <!-- Overskrift --> 
+        <p> Sunne oppskrifter, raske treningsøvelser og enkel handleliste! </p> <!-- Avsnittsstruktur --> 
         <div class="appstore-googleplay-container"> 
-            <img src="./Assets/appstoreBox.png" class="appstoreBox" alt="App Store">
-            <img src="./Assets/googlePlayBox.png" class="googlePlayBox" alt="Google Play">
+            <img src="./Assets/appstoreBox.png" class="appstoreBox" alt="App Store"> <!-- Setter inn bilde med kilde: "appstoreBox.png" --> 
+            <img src="./Assets/googlePlayBox.png" class="googlePlayBox" alt="Google Play"> <!-- Setter inn bilde med kilde: "googlePlayBox.png" --> 
         </div>
         <div class="containerForsideBilde">
-            <img src="./Assets/mockup2.png" alt="BildeAvMockupApp">
+            <img src="./Assets/mockup2.png" alt="BildeAvMockupApp"> <!-- Setter inn bilde av mockup --> 
         </div>
     </section>
+
 
     <section class="seksjonTo"> 
         <h2 class="underOverskrift"> Hvordan fungerer det? </h2>
         <img src="./Assets/bildeForside.png" class="bildeForside" alt="Bilde av funksonalitet">
     </section>
 
+
     <section class="seksjonTre"> 
         <h2 class="underOverskriftTo"> Last ned, utforsk, lev sunt. </h2>
-        <p class="paragraf2"> Enkel, reklamefri app med raske oppskrifter og treningsøvelser. 
-            Maks 15-minutters oppskrifter for frokost, lunsj og middag, 
-            filtrer etter preferanser som vegansk og glutenfritt. 
-            Korte treningsøvelser, ingen abonnement. 
-            Favoritter, brukeranmeldelser og handleliste. 
-            Lett navigasjon, tydelige ikoner, minimal scrolling. 
-            Inspirerende, uten aktivitetssporing. 
-            Oppdaterte helse- og livsstilsartikler på profilsiden. 
-            Velkommen til Fit på 15 minutter! </p>
+        <p class="paragraf2"> "Oppdag Fit på 15 minutter - en enkel, reklamefri app med raske oppskrifter og treningsøvelser. 
+          Lag sunne måltider på maks 15 minutter, fra frokost til middag. 
+          Filtrer etter preferanser som vegansk og glutenfritt. 
+          Ingen abonnement nødvendig! Lag din egen favorittsamling, les brukeranmeldelser og få en praktisk handleliste. 
+          Enkel navigasjon, tydelige ikoner og minimal scrolling. 
+          Oppdater deg med nyttige helse- og livsstilsartikler. 
+          Velkommen til Fit på 15 minutter - ta kontroll over din sunne livsstil!" </p>
             <img src="./Assets/mockup1.png" class="mockup1" alt="Mockup av app">
     </section>
     </main>
 
+
     <!-- Footer section -->
 <footer>
-        <!-- Container for the footer content -->
+        <!-- Container for footer innhold -->
         <section class="containerFooter">
-          <!-- Service section in the footer -->
+          <!-- Service section i footer -->
           <div class="service">
-            <!-- Unordered list of service links -->
+            <!-- Liste med elementer for service lenker -->
             <ul>
               <li> Contact </li>
               <li> About </li>
@@ -69,19 +75,21 @@
               <li> Blog </li>
             </ul>
           </div>
-          <!-- Legal section in the footer -->
+
+
+          <!-- Legal section i footer -->
           <div class="legal-contact">
           <div class="legal">
-            <!-- Unordered list of legal links -->
+            <!-- Liste med elementer for legal lenker -->
             <ul>
               <li> Rights </li>
               <li> Privacy </li>
               <li> Knowledge Center & Support </li>
             </ul>
           </div>
-          <!-- Contact section in the footer -->
+          <!-- Kontact section i footer -->
           <div class="contact">
-            <!-- Unordered list of contact information -->
+            <!-- Liste med elementer for kontakt informasjon -->
             <ul>
               <li> Majorstua 15a, 0479 Oslo </li>
               <li> 15minFit@hotmail.com </li>
@@ -93,5 +101,6 @@
         </section>
       </footer>
     
+
 </body>
 </html>
